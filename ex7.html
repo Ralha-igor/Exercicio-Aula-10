@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+    <style> 
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;  
+            flex-wrap: nowrap;   
+        }
+        .item1{
+            background-color: lightcoral;
+            margin: 10px;
+            flex-shrink: 1;
+            width: 300px;
+            height: 100px;
+        }
+        .item2{
+            margin: 10px;
+            flex-shrink: 1;
+            width: 300px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        .item3{
+            margin: 10px;
+            flex-shrink: 1;
+            width: 300px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        .item:nth-child(3){
+            flex-grow: 2;
+            flex-shrink: 3;    
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <h1>Exercicio 7</h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="item1"> item 1</div>
+                <div class="item2"> item 2</div>
+                <div class="item3"> item 3</div>
+            </div>
+            <p>Notasse que os itens 3 quando encurtamos fica menor e o item 1 permanece maior.</p>
+        </main>
+    <footer>
+        &copy; 2024 
+    </footer>
+</body>
+</html>

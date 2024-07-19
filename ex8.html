@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08</title>
+    <style> 
+        .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;  
+        flex-wrap: wrap;   
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+        background-color: lightcoral;
+        margin: 10px;
+        }
+        .item:first-child{
+        flex-grow: 2;
+        }
+        .item:nth-child(3){
+        flex-shrink: 3;
+        }
+        .item:nth-child(2){
+            flex-basis: 150px;
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+
+        <main>
+            <div class="container">
+                <div class="item"> item 1</div>
+                <div class="item"> item 2</div>
+                <div class="item"> item 3</div>
+            </div>
+            <p>Notasse que o item 2 fica maior que os 1 e 3 todos centralizados verticalmente</p>
+        </main>
+    
+</body>
+</html>

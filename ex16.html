@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16</title>
+    <style> 
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            }
+            @media (max-width: 600px){
+                .container{
+                    flex-direction: column;
+                    align-items: c;
+                }
+            }
+            .item{
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+            flex: 1 0 100px;
+            }
+            
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item"> item 1</div>
+            <div class="item"> item 2</div>
+            <div class="item"> item 3</div>
+    </div>
+    <p> Os item estao alinhados horizontalmente assim que passa de 600px eles viram colunas verticais</p>
+    </main>
+</body>
+</html>

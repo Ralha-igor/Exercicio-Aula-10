@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 20</title>
+    <style> 
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            }
+            .item{
+            flex: 1 1 200px;
+            align-self: stretch;
+            background-color: lightblue;
+            }  
+            .item:nth-child(2){
+                flex-grow: 2;
+            }
+            .item:nth-child(4){
+                order: -1;
+                flex-basis: 300px;
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item"> item 1</div>
+            <div class="item"> item 2</div>
+            <div class="item"> item 3</div>
+            <div class="item"> item 4</div>
+    </div>
+    <p> Notasse que o item 4 e mudado de ordem, sendo colocado em primeiro, e é o que mais ocupa espaço, todos tem um espaço entre eles e estão em coluna verticalmente um embaixo do outro, a responsividade é que ele é esticado horizontalmente. </p>
+    </main>
+</body>
+</html>
